@@ -2,6 +2,7 @@ import './App.css'
 import Papelito from './components/Papelito'
 import frase from './data/frase.json'
 import { useState } from 'react'
+import Autor from './components/Autor'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
 
       <button onClick={suerte}>PROBAR MI SUERTE</button>
 
+      <Autor/>
     </>
   )
 }
