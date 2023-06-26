@@ -114,5 +114,8 @@
   }
   
 }
+#sonido{
+ transition-duration: .5s;
+}
 
 
