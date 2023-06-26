@@ -24,11 +24,13 @@ function App() {
       data={ frase[index] }
       />
 
-      <button onClick={suerte}>PROBAR MI SUERTE</button>
+      <button className='btn1' onClick={suerte}>PROBAR MI SUERTE</button>
 
-      <Autor/>
+      <Autor
+      data={ frase[index] }
+      />
     </>
   )
 }
-
+// https://main--comfy-lamington-10754f.netlify.app/
 export default App
