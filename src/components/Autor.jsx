@@ -1,14 +1,16 @@
+import { useState } from "react"
+
 const Autor = ({data}) => {
 
-    const span = document.querySelector('.data')
+    const [autor, setAutor] = useState(false)
 
     const btn_autor = () => {
-        span.classList.toggle('data2')
+        setAutor(!autor)
     }
 
     return(
         <div className="container_btn">
-            <span className="data">{data.author}</span>
+            <span className={`data ${autor ? 'data2' : ''}`}>{data.author}</span>
             <button onClick={btn_autor} className="btn2"><i class='bx bxs-user'></i></button>
         </div>
     )
