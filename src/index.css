@@ -1,5 +1,4 @@
 
-
 .titulo{
   margin-top: 80px;
   box-shadow: 0 0 20px black;
@@ -10,13 +9,28 @@
 }
 
 .papel{
-  background-image: url(/public/img/papelito.png);
-  background-repeat: no-repeat;
+  background: url(/public/img/papelito.png) no-repeat;
   height: 300px;
   width: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+
+.papel.anim{
+  animation: pal 1s ease-in-out;
+}
+
+@keyframes pal {
+
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+
 }
 
 .par{
@@ -65,7 +79,7 @@
   height: 40px;
   border-radius: 50%;
   font-size: 30px;
-  
+
 }
 
 .btn2:hover{
@@ -87,7 +101,7 @@
   transition: 0s ease;
 }
 
-.data2{ 
+.data2{
   bottom: 0;
   visibility: visible;
   transition-duration: .5s;
@@ -99,23 +113,21 @@
   }
 
   .papel{
-    width: 500px;
-    height: 200px;
+    width: 450px;
+    height: 250px;
     position: relative;
     right: 30px;
     margin-bottom: 30px;
 
   }
   .par{
-    width: 300px;
-    left: 70px;
+    width: 250px;
+    left: 85px;
     bottom: -2px;
 
   }
-  
+
 }
-#sonido{
- transition-duration: .5s;
-}
+
 
 
