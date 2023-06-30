@@ -102,7 +102,9 @@
   bottom: 50px;
   transition: 0s ease;
 }
-
+button{
+  cursor: pointer;
+}
 .data2{
   bottom: 0;
   visibility: visible;
@@ -111,7 +113,8 @@
 
 @media screen and (max-width: 750px) {
   .titulo{
-    width: 400px;
+    width: 250px;
+    font-size: 20px;
   }
 
   .papel{
@@ -127,6 +130,10 @@
     width: 240px;
     bottom: 10px;
 
+  }
+  .btn1{
+    position: relative;
+    bottom: 20px;
   }
 
 }
